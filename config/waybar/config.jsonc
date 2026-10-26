@@ -1,0 +1,38 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 38,
+  "spacing": 8,
+  "margin-top": 10,
+  "margin-left": 14,
+  "margin-right": 14,
+  "modules-left": ["custom/launcher", "custom/wallpaper", "hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "network", "battery", "tray"],
+  "custom/launcher": {
+    "format": "󰣇",
+    "on-click": "wofi --show drun",
+    "tooltip": false
+  },
+  "custom/wallpaper": {
+    "format": "󰸉",
+    "on-click": "~/.config/hypr/scripts/wallpaper.sh --pick",
+    "on-click-right": "~/.config/hypr/scripts/wallpaper.sh --random",
+    "on-scroll-up": "~/.config/hypr/scripts/wallpaper.sh --next",
+    "on-scroll-down": "~/.config/hypr/scripts/wallpaper.sh --next",
+    "interval": 5,
+    "exec": "~/.config/hypr/scripts/wallpaper.sh --status",
+    "tooltip": true
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {"active": "", "default": ""},
+    "persistent-workspaces": {"*": 5}
+  },
+  "hyprland/window": {"format": "{}", "max-length": 55},
+  "clock": {"format": "󰥔  {:%a, %d %b  %H:%M}", "tooltip-format": "<tt>{calendar}</tt>"},
+  "pulseaudio": {"format": "{icon} {volume}%", "format-muted": "󰝟 muted", "format-icons": ["󰕿", "󰖀", "󰕾"], "on-click": "pavucontrol"},
+  "network": {"format-wifi": "󰤨 {signalStrength}%", "format-ethernet": "󰈀", "format-disconnected": "󰤭 offline"},
+  "battery": {"format": "{icon} {capacity}%", "format-icons": ["󰂎", "󰁺", "󰁼", "󰁾", "󰂀"]},
+  "tray": {"spacing": 8}
+}

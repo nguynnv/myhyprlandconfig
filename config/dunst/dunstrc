@@ -1,0 +1,29 @@
+[global]
+    monitor = 0
+    follow = mouse
+    width = 360
+    height = 120
+    origin = top-right
+    offset = 18x58
+    gap_size = 8
+    transparency = 8
+    corner_radius = 12
+    frame_width = 1
+    frame_color = "#8be9fd"
+    separator_color = frame
+    font = Inter 10
+    background = "#181821"
+    foreground = "#f8f8f2"
+    progress_bar = true
+    markup = full
+
+[urgency_low]
+    timeout = 4
+    background = "#181821"
+[urgency_normal]
+    timeout = 6
+    background = "#282a36"
+[urgency_critical]
+    timeout = 0
+    background = "#441f2a"
+    frame_color = "#ff5555"

@@ -1,0 +1,5 @@
+window { margin: 0; border: 1px solid rgba(139, 233, 253, 0.35); border-radius: 14px; background-color: rgba(18, 18, 26, 0.92); }
+#input { margin: 10px; padding: 10px; border: 1px solid rgba(189, 147, 249, 0.45); border-radius: 10px; color: #f8f8f2; background-color: rgba(40, 42, 54, 0.8); }
+#inner-box { margin: 4px 10px 10px; }
+#entry { padding: 9px; border-radius: 9px; color: #f8f8f2; }
+#entry:selected { background-color: rgba(139, 233, 253, 0.2); color: #8be9fd; }

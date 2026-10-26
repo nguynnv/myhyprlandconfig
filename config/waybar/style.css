@@ -1,0 +1,12 @@
+* { border: none; border-radius: 0; font-family: "Inter", sans-serif; font-size: 13px; }
+window#waybar { background: rgba(18, 18, 26, 0.78); color: #f8f8f2; border: 1px solid rgba(139, 233, 253, 0.22); border-radius: 14px; }
+#custom-launcher, #custom-wallpaper, #workspaces, #clock, #pulseaudio, #network, #battery, #tray { padding: 0 12px; }
+#custom-launcher { color: #8be9fd; font-size: 18px; }
+#custom-wallpaper { color: #ff79c6; font-size: 16px; }
+#workspaces button { color: #6272a4; padding: 0 5px; }
+#workspaces button.active { color: #bd93f9; }
+#clock { color: #f8f8f2; font-weight: 600; }
+#pulseaudio { color: #50fa7b; }
+#network { color: #8be9fd; }
+#battery { color: #ffb86c; }
+#battery.warning { color: #ff5555; }
